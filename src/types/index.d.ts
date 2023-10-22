@@ -3,7 +3,7 @@ import { Icons } from "@/components/icons";
 import { User } from "@prisma/client";
 
 export type NavItem = {
-  title: string;
+  name: string;
   href: string;
   disabled?: boolean;
 };
@@ -30,7 +30,6 @@ export type SiteConfig = {
   name: string;
   description: string;
   url: string;
-  ogImage: string;
   links: {
     twitter: string;
     github: string;

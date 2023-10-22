@@ -36,7 +36,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
             >
-              {item.title}
+              {item.name}
             </Link>
           ))}
         </nav>
