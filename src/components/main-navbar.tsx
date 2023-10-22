@@ -41,7 +41,7 @@ export function MainNav({ items, children }: MainNavProps) {
                 item.disabled && "cursor-not-allowed opacity-80"
               )}
             >
-              {item.title}
+              {item.name}
             </Link>
           ))}
         </nav>

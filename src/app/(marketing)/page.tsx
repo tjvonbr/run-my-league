@@ -32,7 +32,7 @@ export default async function IndexPage() {
         </div>
       </section>
       <section
-        id="features"
+        id="process"
         className="container space-y-6 bg-slate-50 py-8 md:py-12 lg:py-24"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
