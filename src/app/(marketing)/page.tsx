@@ -33,11 +33,11 @@ export default async function IndexPage() {
       </section>
       <section
         id="features"
-        className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
+        className="container space-y-6 bg-slate-50 py-8 md:py-12 lg:py-24"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            How does it work?
+            How it works
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             We can provide varying degrees of assistance throughout the course
@@ -45,7 +45,7 @@ export default async function IndexPage() {
             generally looks like this:
           </p>
         </div>
-        <div className="mx-auto flex flex-col items-center md:flex-row md:space-x-4 md:max-w-[40rem] ">
+        <div className="mx-auto flex flex-col items-center md:flex-row md:space-x-4 md:max-w-[40rem]">
           <div className="flex flex-col gap-8">
             <div className="h-48 w-80 rounded-lg border bg-background p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
               <div className="h-full flex flex-col justify-center space-y-4 rounded-md px-6">
@@ -121,6 +121,131 @@ export default async function IndexPage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" className="container py-8 md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[90%] flex-col items-center gap-4">
+          <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+            <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+              Pricing
+            </h2>
+            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+              We can provide varying degrees of assistance throughout the course
+              of the season depending on which package you purchase, but the
+              flow generally looks like this:
+            </p>
+          </div>
+          <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+            <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+              <p className="text-2xl text-muted-foreground font-medium">
+                Weekly
+              </p>
+              <p className="mt-4 text-2xl text-foreground font-bold">
+                $29.99/week
+              </p>
+              <div className="w-[90%] my-8 border-t-[0.5px] border" />
+              <div className="flex flex-col space-y-4">
+                <div className="w-full flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    25% cheaper than competitors
+                  </p>
+                </div>
+                <div className="w-full flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    24/7 on-call fantasy advice
+                  </p>
+                </div>
+                <div className="w-full flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    Weekly roster optimization
+                  </p>
+                </div>
+                <div className="w-full flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">Waiver wire optimization</p>
+                </div>
+                <div className="w-full flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    Weekly reports in your inbox
+                  </p>
+                </div>
+              </div>
+              <Link
+                href="/register"
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "absolute bottom-5"
+                )}
+              >
+                Get started with Weekly Support
+              </Link>
+            </div>
+            <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+              <p className="text-2xl text-muted-foreground font-medium">
+                Draft
+              </p>
+              <p className="mt-4 text-2xl text-foreground font-bold">$74.99</p>
+              <div className="w-[90%] my-8 border-t-[0.5px] border" />
+              <div className="flex flex-col space-y-4">
+                <div className="flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    25% cheaper than competitors
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    Full-service draft assistance
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">
+                    Personalized draft strategy
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-2 items-center">
+                  <Icons.check size={15} />
+                  <p className="text-sm text-black">End-of-draft report</p>
+                </div>
+              </div>
+              <Link
+                href="/register"
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "absolute bottom-5"
+                )}
+              >
+                Get started with Draft Support
+              </Link>
+            </div>
+            <div className="h-[28rem] my-5 p-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+              <p className="text-2xl text-muted-foreground font-medium">
+                Full-Season Support
+              </p>
+              <p className="mt-4 text-2xl text-foreground font-bold">$449.99</p>
+              <div className="w-[90%] my-8 border-t-[0.5px] border" />
+              <div className="flex flex-col space-y-4">
+                <p className="text-center text-sm text-black">
+                  Everything from Weekly Support and Draft Support packages
+                </p>
+              </div>
+              <Link
+                href="/register"
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "absolute bottom-5"
+                )}
+              >
+                Get started with Full-Season Support
+              </Link>
             </div>
           </div>
         </div>
