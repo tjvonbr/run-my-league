@@ -25,7 +25,10 @@ export default async function IndexPage() {
             you to the top of your league standings in no time!
           </p>
           <div className="space-x-4">
-            <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
+            <Link
+              href="/#pricing"
+              className={cn(buttonVariants({ size: "lg" }))}
+            >
               Get Started
             </Link>
           </div>
