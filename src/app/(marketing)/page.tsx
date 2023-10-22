@@ -139,7 +139,7 @@ export default async function IndexPage() {
           </div>
           <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
             <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-              <p className="text-2xl text-muted-foreground font-medium">
+              <p className="text-center text-2xl text-muted-foreground font-medium">
                 Weekly
               </p>
               <p className="mt-4 text-2xl text-foreground font-bold">
@@ -183,11 +183,11 @@ export default async function IndexPage() {
                   "absolute bottom-5"
                 )}
               >
-                Get started with Weekly Support
+                Get started with Weekly
               </Link>
             </div>
             <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-              <p className="text-2xl text-muted-foreground font-medium">
+              <p className="text-center text-2xl text-muted-foreground font-medium">
                 Draft
               </p>
               <p className="mt-4 text-2xl text-foreground font-bold">$74.99</p>
@@ -223,18 +223,19 @@ export default async function IndexPage() {
                   "absolute bottom-5"
                 )}
               >
-                Get started with Draft Support
+                Get started with Draft
               </Link>
             </div>
             <div className="h-[28rem] my-5 p-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-              <p className="text-2xl text-muted-foreground font-medium">
+              <p className="text-center text-2xl text-muted-foreground font-medium">
                 Full-Season Support
               </p>
               <p className="mt-4 text-2xl text-foreground font-bold">$449.99</p>
               <div className="w-[90%] my-8 border-t-[0.5px] border" />
               <div className="flex flex-col space-y-4">
                 <p className="text-center text-sm text-black">
-                  Everything from Weekly Support and Draft Support packages
+                  All features and services from the Weekly Support and Draft
+                  Support packages beginning
                 </p>
               </div>
               <Link
@@ -244,7 +245,7 @@ export default async function IndexPage() {
                   "absolute bottom-5"
                 )}
               >
-                Get started with Full-Season Support
+                Get started with Full-Season
               </Link>
             </div>
           </div>
