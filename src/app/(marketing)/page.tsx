@@ -141,7 +141,7 @@ export default async function IndexPage() {
             </p>
           </div>
           <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-            <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+            <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-slate-50 border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
               <p className="text-center text-2xl text-muted-foreground font-medium">
                 Weekly
               </p>
@@ -189,7 +189,7 @@ export default async function IndexPage() {
                 Get started with Weekly
               </Link>
             </div>
-            <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+            <div className="h-[28rem] p-5 my-5 relative flex flex-col items-center rounded-md bg-slate-50 border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
               <p className="text-center text-2xl text-muted-foreground font-medium">
                 Draft
               </p>
@@ -229,7 +229,7 @@ export default async function IndexPage() {
                 Get started with Draft
               </Link>
             </div>
-            <div className="h-[28rem] my-5 p-5 relative flex flex-col items-center rounded-md bg-muted border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+            <div className="h-[28rem] my-5 p-5 relative flex flex-col items-center rounded-md bg-slate-50 border shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
               <p className="text-center text-2xl text-muted-foreground font-medium">
                 Full-Season Support
               </p>
