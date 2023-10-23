@@ -3,11 +3,14 @@ import { buttonVariants } from "@/components/common/button";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { Icons } from "@/components/common/icons";
+import { UserTestimonial, testimonials } from "@/config/testimonials";
+import TestimonialCard from "@/components/testimonial-card";
+import Testimonials from "@/components/testimonials";
 
 export default async function IndexPage() {
   return (
     <>
-      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32 overflow-visible">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
           <Link
             href={siteConfig.links.twitter}
@@ -126,6 +129,22 @@ export default async function IndexPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="testimonials" className="py-8 md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            What our users think
+          </h2>
+          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Many fantasy football players have never been to the playoffs, won
+            their league championship, or consistently led their league in
+            points scored. Things quickly turned around when they asked for our
+            help.
+          </p>
+        </div>
+        <div className="h-64 w-full my-5 relative py-5 overflow-hidden">
+          <Testimonials />
         </div>
       </section>
       <section id="pricing" className="container py-8 md:py-12 lg:py-24">
