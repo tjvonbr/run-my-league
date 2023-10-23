@@ -134,7 +134,7 @@ export default async function IndexPage() {
       <section id="testimonials" className="py-8 md:py-12 lg:py-24">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            What our users think
+            What our clients think
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Many fantasy football players have never been to the playoffs, won
@@ -143,7 +143,7 @@ export default async function IndexPage() {
             help.
           </p>
         </div>
-        <div className="h-64 w-full my-5 relative py-5 overflow-hidden">
+        <div className="h-64 w-full my-5 relative py-5 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
           <Testimonials />
         </div>
       </section>
